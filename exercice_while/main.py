@@ -2,10 +2,10 @@
 Formation Python
 apprendre la programmation"""
 
+nom = ""
 
-
-
-nom = input("Quel est votre nom ? ")
+while nom == "":
+    nom = input("Quel est votre nom ? ")
 
 age = 0
 while age == 0:
