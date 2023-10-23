@@ -1,5 +1,5 @@
 import random
-
+# Jeu de devinette
 
 def demander_nombre(nb_min, nb_max):
     nombre_int = 0
@@ -9,6 +9,8 @@ def demander_nombre(nb_min, nb_max):
             nombre_int = int(nombre_str)
         except ValueError:
             print("ERREUR: Vous devez rentrer un nombre. Réessayez")
+         
+            
         else:
             if nombre_int < nb_min or nombre_int > nb_max:
                 print(f"Erreur: Le nombre doit etre compris entre {NOMBRE_MIN} et {NOMBRE_MAX}")
@@ -34,7 +36,7 @@ while not nombre == NOMBRE_MAGIQUE and vies > 0:
         NB_VIES -= 1
     else:
         print("Le nombre magique est plus grand !")
-        vies -= 1
+        NB_VIES -= 1
 
 if vies == 0:
-    print("Vous avez perdu") 
+    print(f"Vous avez perdu, le nombre magique est {NOMBRE_MAGIQUE} ") 
